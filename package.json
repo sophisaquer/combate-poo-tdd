@@ -1,0 +1,27 @@
+{
+  "name": "combate-poo-tdd",
+  "version": "1.0.0",
+  "description": "Simulación de combate orientada a objetos con TypeScript y tests unitarios",
+  "main": "index.js",
+  "scripts": {
+    "test": "node --test test/*.test.ts",
+    "coverage": "node --test --experimental-test-coverage test/*.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sophisaquer/combate-poo-tdd.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/sophisaquer/combate-poo-tdd/issues"
+  },
+  "homepage": "https://github.com/sophisaquer/combate-poo-tdd#readme",
+  "devDependencies": {
+    "@types/node": "^26.6.0",
+    "typescript": "^7.0.2"
+  }
+}
