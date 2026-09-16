@@ -1,8 +1,10 @@
+import { Arma } from "./Arma.ts";
 import { Escudo } from "./Escudo.ts";
 
 export abstract class Combatiente {
   private vida: number;
   private escudo: Escudo | null = null;
+  private arma: Arma | null = null;
 
   constructor(vidaInicial: number) {
     this.vida = vidaInicial;
@@ -17,11 +19,16 @@ export abstract class Combatiente {
   }
 
   dispararA(objetivo: Combatiente): void {
-    objetivo.recibirDisparo();
+    const danio = this.arma ? this.arma.disparar() : 100;
+    objetivo.recibirDisparo(danio);
   }
 
   equiparEscudo(escudo: Escudo): void {
     this.escudo = escudo;
+  }
+
+  equiparArma(arma: Arma): void {
+    this.arma = arma;
   }
 
   estaVivo(): boolean {
