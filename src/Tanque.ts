@@ -1,7 +1,7 @@
 import { Combatiente } from "./Combatiente.ts";
 
-export class Soldado extends Combatiente {
+export class Tanque extends Combatiente {
   constructor() {
-    super(100);
+    super(200);
   }
 }
