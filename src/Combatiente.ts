@@ -12,4 +12,8 @@ export abstract class Combatiente {
   estaVivo(): boolean {
     return this.vida > 0;
   }
+  
+  dispararA(objetivo: Combatiente): void {
+  objetivo.recibirDisparo();
+}
 }
