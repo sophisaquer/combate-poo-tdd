@@ -48,3 +48,17 @@ test("el buque puede usar un escudo", () => {
   buque.recibirDisparo();
   assert.equal(buque.estaVivo(), false);
 });
+
+test("no permite un porcentaje de escudo negativo", () => {
+  assert.throws(
+    () => new Escudo(-1),
+    /El porcentaje debe estar entre 0 y 100/
+  );
+});
+
+test("no permite un porcentaje de escudo mayor a 100", () => {
+  assert.throws(
+    () => new Escudo(101),
+    /El porcentaje debe estar entre 0 y 100/
+  );
+});

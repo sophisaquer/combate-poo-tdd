@@ -49,3 +49,17 @@ test("un combatiente no hace daño cuando su arma queda sin municiones", () => {
   assert.equal(primerObjetivo.estaVivo(), false);
   assert.equal(segundoObjetivo.estaVivo(), true);
 });
+
+test("no permite municiones negativas", () => {
+  assert.throws(
+    () => new Pistola(-1),
+    /Las municiones deben ser un número entero no negativo/
+  );
+});
+
+test("no permite municiones decimales", () => {
+  assert.throws(
+    () => new Pistola(1.5),
+    /Las municiones deben ser un número entero no negativo/
+  );
+});
