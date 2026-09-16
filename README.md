@@ -1,4 +1,4 @@
-Combate POO con TDD
+Combate
 
 Funcionalidades
 
