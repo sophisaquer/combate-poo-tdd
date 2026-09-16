@@ -13,17 +13,13 @@ Funcionalidades
 - Las armas sin municiones no causan daño.
 - Validación de porcentajes y municiones.
 
-Instalación
-npm install
+Instalación: npm install
 
-Ejecutar los tests
-npm test
+Ejecutar los tests: npm test
 
-Verificar TypeScript
-npm run typecheck
+Verificar TS: npm run typecheck
 
-Consultar la cobertura
-npm run coverage
+Consultar la cobertura: npm run coverage
 
 
 Diseño
